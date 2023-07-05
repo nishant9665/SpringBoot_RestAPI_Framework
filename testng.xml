@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/user/Desktop/Nishant/Spring_Boot/RESTAPI_Demo">
+        <classes>
+            <class name="com.RestAPI.RESTAPI_Demo.RestapiDemoApplicationTests">
+                <methods>
+                    <include name="contextLoads"/>
+                    <include name="contextLoads2"/>
+                </methods>
+            </class>
+            <class name="com.RestAPI.RESTAPI_Demo.TestNGTestsWithSpringBootIT">
+                <methods>
+                    <include name="GetBooksDetails"/>
+                    <include name="simpleTest"/>
+                    <include name="simpleTest2"/>
+                    <include name="java"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

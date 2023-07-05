@@ -13,7 +13,7 @@ public class MyController {
 
     @GetMapping("/home")
     public String home() {
-        return "This is home Page";
+        return "This is home Page- Nishant 5 July";
     }
 
     // get the courses

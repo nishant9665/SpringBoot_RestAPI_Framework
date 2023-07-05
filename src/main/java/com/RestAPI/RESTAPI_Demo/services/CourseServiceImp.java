@@ -13,6 +13,7 @@ public class CourseServiceImp implements CourseService {
         list = new ArrayList<>();
         list.add(new Course(145, "JAVA COURSE", "This course is basic of java"));
         list.add(new Course(2221, "Spring Boot COURSE", "This course is Spring boot details course"));
+        list.add(new Course(1121, "Spring Boot COURSE2", "This course is Spring boot details course2"));
     }
 
     @Override

@@ -8,6 +8,13 @@ class RestapiDemoApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("This is for testing");
+
+    }
+    @Test
+    void contextLoads2() {
+        System.out.println("This is for testing2");
+
     }
 
 }
