@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]">
+  <test name="C:/Users/user/Desktop/Nishant/Spring_Boot/RESTAPI_Demo(failed)">
+    <classes>
+      <class name="com.RestAPI.RESTAPI_Demo.TestNGTestsWithSpringBootIT">
+        <methods>
+          <include name="GetBooksDetails"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.RestAPI.RESTAPI_Demo.TestNGTestsWithSpringBootIT -->
+    </classes>
+  </test> <!-- C:/Users/user/Desktop/Nishant/Spring_Boot/RESTAPI_Demo(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
