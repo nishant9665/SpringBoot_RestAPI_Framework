@@ -7,6 +7,8 @@ import io.restassured.specification.RequestSpecification;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 @SpringBootTest(classes = TestNGWithSpringApplication.class)
@@ -26,6 +28,10 @@ public class TestNGTestsWithSpringBootIT2 extends AbstractTestNGSpringContextTes
 
     }
 
+    @BeforeMethod
+    public void setup(){
+        System.out.println("this setup");
+    }
     @Test(priority = 1, enabled = false)
     public void simpleTest() {
         Assert.assertEquals(2 * 2, 4, "2x2 should be 4");
@@ -45,5 +51,9 @@ public class TestNGTestsWithSpringBootIT2 extends AbstractTestNGSpringContextTes
     {
         System.out.println("Wipro");
 
+    }
+    @AfterMethod
+    public void tearDown(){
+        System.out.println("this teardown");
     }
 }
