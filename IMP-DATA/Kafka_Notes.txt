@@ -1,0 +1,44 @@
+1.Open this folder and run the below command
+Folder and cmd: C:\kafka\bin\windows>zookeeper-server-start.bat ..\..\config\zookeeper.properties
+cmd:zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+2.Open this folder and  run the below command
+folder and cmd :C:\kafka\bin\windows>kafka-server-start.bat ..\..\config\server.properties
+cmd :kafka-server-start.bat ..\..\config\server.properties
+
+3.Open this folder ,create new topic run the below command
+folder AND CMD : C:\kafka\bin\windows>kafka-topics.bat --create --topic july6-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3
+                 Created topic july6-topic.
+cmd : kafka-topics.bat --create --topic july6-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3
+
+4.Open this folder(C:\Windows\System32\cmd.exe) run the below command
+kafka-console-producer.bat --broker-list localhost:9092 --topic july6-topic
+
+5.Open this folder and run the below command
+cmd:kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic july6-topic --from-beginning
+
+
+
+
+
+----------------------------
+1.zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+if you are facing the  issue while executing this command <zookeeper-server-start.bat ..\..\config\zookeeper.properties>
+
+Then paste the kafka folder to c drive , make the path as <C:\kafka\bin\windows>zookeeper-server-start.bat ..\..\config\zookeeper.properties>'
+above line fix the logn path issue.
+----------------------------
+Zookpper start with this message as <[2023-06-23 13:00:19,554] INFO Reading configuration from: ..\..\config\zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)>
+
+2.kafka-server-start.bat ..\..\config\server.properties
+
+
+
+
+
+
+
+
+
+

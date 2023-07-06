@@ -75,7 +75,7 @@ public class TestNGTestsWithSpringBootIT3 extends AbstractTestNGSpringContextTes
         extent.createTest("Smoke_Test")
                 .log(Status.FAIL, "This is a logging event for Smoke_Test, and it passed!");
         Assert.assertEquals("ABC", "ABXC", "ABC is match only");
-        
+
 
         System.out.println("Smoke_Test -QA");
     }
