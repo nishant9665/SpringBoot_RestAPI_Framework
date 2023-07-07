@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class KafkaPublisherApplications {
     @Autowired
     private KafkaTemplate<String, Object> template;
-    private String topic = "july6-topic";
+    private String topic = "P1JULY7-topic";
 
     @GetMapping("/public/{name}")
     public String publishMessage(@PathVariable String name) {
-        template.send(topic, "Hi " + name + " Welcome to java topic on 6 July");
+        template.send(topic, "Hi " + name + " Welcome to java topic on 7 July");
         return "Data Published by Nishant";
     }
 

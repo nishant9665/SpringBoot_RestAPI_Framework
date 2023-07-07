@@ -14,7 +14,7 @@ public class TestNGTestsWithSpringBootIT extends AbstractTestNGSpringContextTest
     @Test
     public void GetBooksDetails() {
         // Specify the base URL to the RESTful web service
-        RestAssured.baseURI = "http://localhost:8081";
+        RestAssured.baseURI = "http://localhost:9091";
         // Get the RequestSpecification of the request to be sent to the server.
         RequestSpecification httpRequest = RestAssured.given();
         // specify the method type (GET) and the parameters if any.

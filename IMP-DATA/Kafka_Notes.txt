@@ -1,20 +1,22 @@
-1.Open this folder and run the below command
+Step1.Open this folder and run the below command
 Folder and cmd: C:\kafka\bin\windows>zookeeper-server-start.bat ..\..\config\zookeeper.properties
 cmd:zookeeper-server-start.bat ..\..\config\zookeeper.properties
 
-2.Open this folder and  run the below command
+Step2.Open this folder and  run the below command
 folder and cmd :C:\kafka\bin\windows>kafka-server-start.bat ..\..\config\server.properties
 cmd :kafka-server-start.bat ..\..\config\server.properties
 
-3.Open this folder ,create new topic run the below command
+Step3.Open this folder ,create new topic run the below command
 folder AND CMD : C:\kafka\bin\windows>kafka-topics.bat --create --topic july6-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3
                  Created topic july6-topic.
 cmd : kafka-topics.bat --create --topic july6-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3
 
-4.Open this folder(C:\Windows\System32\cmd.exe) run the below command
-kafka-console-producer.bat --broker-list localhost:9092 --topic july6-topic
+Step4.Open this folder(C:\Windows\System32\cmd.exe) run the below command.
+Note: Data will send to topic by using below command
+kafka-console-producer.bat --broker-list localhost:9092 --topic july7-topic
 
-5.Open this folder and run the below command
+Step5.Open this folder and run the below command
+Note: User is able to get data from producer and able to see on consume windows.
 cmd:kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic july6-topic --from-beginning
 
 
@@ -33,8 +35,15 @@ Zookpper start with this message as <[2023-06-23 13:00:19,554] INFO Reading conf
 
 2.kafka-server-start.bat ..\..\config\server.properties
 
+----------------------------
+How to run testng in spring boot project ?
 
-
+1.Create 1 class main class in src/main/java with any name like(i.e.TestNGWithSpringApplication)
+2.Run this main class
+3.Go to test/java/ and create 1 class with any name and below details as example
+@SpringBootTest(classes = TestNGWithSpringApplication.class)---->Main class Name
+public class TestNGTestsWithSpringBootIT2--->Created class extends AbstractTestNGSpringContextTests--->TestNG support file {}
+4.Run this class with same port you need to validate.
 
 
 
