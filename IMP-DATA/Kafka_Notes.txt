@@ -45,6 +45,19 @@ How to run testng in spring boot project ?
 public class TestNGTestsWithSpringBootIT2--->Created class extends AbstractTestNGSpringContextTests--->TestNG support file {}
 4.Run this class with same port you need to validate.
 
+------------------------------
+How to kafka work ?
+1.Run the producer code in 1 server on port.(Like port :9091)
+2.Run the consumer code in 2 server on port.(Like port :9096)
+3.How to create 2nd port or many port on same project ?
+  s1.open edit configuration
+  s2.click on modify option add vm option
+  s3.add the data <-Dserver.port=9096> as example
+  s4.click on apply and save.
+  s5.Check on UI side code for producer and consumer in chrome browser.
+  
+
+
 
 
 
